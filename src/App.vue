@@ -2,8 +2,8 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
-import SecondSlide from './components/SecondSlide.vue'
-// import ThirdSlide from './components/ThirdSlide.vue'
+// import SecondSlide from './components/SecondSlide.vue'
+import ThirdSlide from './components/ThirdSlide.vue';
 // import FourthSlide from './components/FourthSlide.vue'
 // import FifthSlide from './components/FifthSlide.vue'
 // import SixthSlide from './components/SixthSlide.vue'
@@ -18,8 +18,8 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
-    SecondSlide
-    // ThirdSlide,
+    // SecondSlide
+    ThirdSlide,
     // FourthSlide,
     // FifthSlide,
     // SixthSlide,
@@ -52,7 +52,7 @@ export default {
       <Carousel class="carousel" :autoplay="2000" :wrapAround="true" :transition="500" items-to-show="2.5" :items-to-show="1.5">
         <Slide v-for="(slidePath, idx) in slidesPaths" :key="slide">
           <FirstSlide v-if="idx === 0" />
-          <SecondSlide v-if="idx === 1"/>
+          <ThirdSlide v-if="idx === 2"/>
         </Slide>
         <template #addons>
           <Navigation />
@@ -72,9 +72,9 @@ export default {
       </ul>
     </div>
     <div class="footer-bg">
-      <button>Join today!</button>
-      <button>LIA Instagram</button>
-      <button>LIA TikTok</button>
+      <div>Join today!</div>
+      <div>LIA Instagram</div>
+      <div>LIA TikTok</div>
     </div>
 </template>
 
@@ -188,10 +188,19 @@ export default {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.footer-bg button {
+.footer-bg div {
   width: 265px;
+  font-family: 'Archivo Black';
+  font-size: 27px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: linear-gradient(90deg, #C66BFF 0%, #600CCB 100%);
+  height: 75px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .img-slide {
