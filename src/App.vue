@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      slidesPaths: ['../../src/assets/first-slide.jpg', '../../src/assets/second-slide.jpg', '../../src/assets/third-slide.jpg', '../../src/assets/fifth-slide.jpg', '../../src/assets/sixth-slide.jpg', '../../src/assets/seventh-slide.jpg', '../../src/assets/eithts-slide.jpg'],
+      slidesPaths: ['./assets/first-slide.jpg', '../src/assets/second-slide.jpg', '../../src/assets/third-slide.jpg', '../../src/assets/fifth-slide.jpg', '../../src/assets/sixth-slide.jpg', '../../src/assets/seventh-slide.jpg', '../../src/assets/eithts-slide.jpg'],
     }
   },
 }

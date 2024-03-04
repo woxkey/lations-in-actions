@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import FirstSlide from '../assets/first-slide.jpg'
 export default {
     name: 'FirstSlide',
     props: ['url'],
