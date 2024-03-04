@@ -53,7 +53,7 @@ export default {
         <Slide v-for="(slidePath, idx) in slidesPaths" :key="slide">
           <FirstSlide v-if="idx === 0" />
           <SecondSlide v-if="idx === 1"/>
-        </slide>
+        </Slide>
         <template #addons>
           <Navigation />
           <Pagination />
@@ -188,6 +188,10 @@ export default {
   background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+.footer-bg button {
+  width: 265px;
 }
 
 .img-slide {
