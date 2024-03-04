@@ -2,14 +2,14 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
-import firstSlde from './assets/first-slide.jpg'
-import secondSlide from './assets/first-slide.jpg'
-import thirdSlide from './assets/first-slide.jpg'
-import fourthSlide from './assets/first-slide.jpg'
-import fifthSlide from './assets/first-slide.jpg'
-import sixthSlide from './assets/first-slide.jpg'
-import seventhSlide from './assets/first-slide.jpg'
-import eithtsSlide from './assets/first-slide.jpg'
+import firstSlde from '/assets/first-slide.jpg'
+import secondSlide from '../public/assets/first-slide.jpg'
+import thirdSlide from '../public/assets/first-slide.jpg'
+import fourthSlide from '../public/assets/first-slide.jpg'
+import fifthSlide from '../public/assets/first-slide.jpg'
+import sixthSlide from '../public/assets/first-slide.jpg'
+import seventhSlide from '../public/assets/first-slide.jpg'
+import eithtsSlide from '../public/assets/first-slide.jpg'
 
 
 export default {
@@ -39,7 +39,7 @@ export default {
 <template>
     <div class="container">
       <div class="logo-wrapper">
-        <img src="./assets/logo.svg" alt="">
+        <img src="/assets/logo.svg" alt="">
       </div>
     </div>
     <div class="bg">
@@ -119,7 +119,7 @@ export default {
 }
 
 .bg {
-  background-image: url('./assets/main-bg.jpg');
+  background-image: url('assets/main-bg.jpg');
   height: 234px;
   width: 100%;
   background-repeat: no-repeat;
@@ -181,7 +181,7 @@ export default {
 }
 
 .footer-bg {
-  background-image: url('./assets/footer-bg.jpg');
+  background-image: url('../public/assets/footer-bg.jpg');
   width: 100%;
   height: 405px;
   background-position: 39% 84%;
