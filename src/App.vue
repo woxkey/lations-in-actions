@@ -20,7 +20,13 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
-    firstSlde
+    firstSlde,
+    secondSlide,
+    thirdSlide,
+    fourthSlide,
+    fifthSlide,
+    seventhSlide,
+    eithtsSlide
   },
   data() {
     return {
