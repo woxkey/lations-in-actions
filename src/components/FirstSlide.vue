@@ -1,5 +1,5 @@
 <template>
-    <img class="img-slide" :src="url" alt="">
+    <img class="img-slide" src="../assets/first-slide.jpg" alt="">
 </template>
 
 <script>
