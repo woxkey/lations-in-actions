@@ -168,7 +168,7 @@ export default {
 
 .footer-bg {
   background-image: url('./assets/footer-bg.jpg');
-  max-width: 100%;
+  width: 100%;
   height: 405px;
   background-position: 39% 84%;
   background-repeat: no-repeat;
