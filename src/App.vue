@@ -2,14 +2,13 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
-import SecondSlide from './components/SecondSlide.vue'
-import ThirdSlide from './components/ThirdSlide.vue'
-import FourthSlide from './components/FourthSlide.vue'
-import FifthSlide from './components/FifthSlide.vue'
-import SixthSlide from './components/SixthSlide.vue'
-import SeventhSlide from './components/SeventhSlide.vue'
-import EitghSlide from './components/EitghSlide.vue'
-import Accordion from './components/Accordion.vue'
+// import SecondSlide from './components/SecondSlide.vue'
+// import ThirdSlide from './components/ThirdSlide.vue'
+// import FourthSlide from './components/FourthSlide.vue'
+// import FifthSlide from './components/FifthSlide.vue'
+// import SixthSlide from './components/SixthSlide.vue'
+// import SeventhSlide from './components/SeventhSlide.vue'
+// import EitghSlide from './components/EitghSlide.vue'
 
 export default {
   name: 'App',
@@ -19,14 +18,13 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
-    Accordion,
-    SecondSlide,
-    ThirdSlide,
-    FourthSlide,
-    FifthSlide,
-    SixthSlide,
-    SeventhSlide,
-    EitghSlide
+    // SecondSlide,
+    // ThirdSlide,
+    // FourthSlide,
+    // FifthSlide,
+    // SixthSlide,
+    // SeventhSlide,
+    // EitghSlide
   },
   data() {
     return {
