@@ -3,7 +3,7 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
 // import SecondSlide from './components/SecondSlide.vue'
-import ThirdSlide from './components/ThirdSlide.vue';
+// import ThirdSlide from './components/ThirdSlide.vue';
 // import FourthSlide from './components/FourthSlide.vue'
 // import FifthSlide from './components/FifthSlide.vue'
 // import SixthSlide from './components/SixthSlide.vue'
@@ -19,7 +19,7 @@ export default {
     Navigation,
     FirstSlide,
     // SecondSlide
-    ThirdSlide,
+    // ThirdSlide,
     // FourthSlide,
     // FifthSlide,
     // SixthSlide,
@@ -50,9 +50,8 @@ export default {
     </div>
     <div class="container">
       <Carousel class="carousel" :autoplay="2000" :wrapAround="true" :transition="500" items-to-show="2.5" :items-to-show="1.5">
-        <Slide v-for="(slidePath, idx) in slidesPaths" :key="slide">
-          <FirstSlide v-if="idx === 0" />
-          <ThirdSlide v-if="idx === 2"/>
+        <Slide v-for="(slidePath) in slidesPaths" :key="slide">
+          <FirstSlide :url="slidePath" />
         </Slide>
         <template #addons>
           <Navigation />
@@ -72,9 +71,9 @@ export default {
       </ul>
     </div>
     <div class="footer-bg">
-      <div>Join today!</div>
-      <div>LIA Instagram</div>
-      <div>LIA TikTok</div>
+      <a>Join today!</a>
+      <a>LIA Instagram</a>
+      <a>LIA TikTok</a>
     </div>
 </template>
 
@@ -191,7 +190,8 @@ export default {
   align-items: center;
 }
 
-.footer-bg div {
+.footer-bg a {
+  text-decoration: none;
   width: 265px;
   font-family: 'Archivo Black';
   font-size: 27px;
