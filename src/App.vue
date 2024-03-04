@@ -2,13 +2,12 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
-import SecondSlide from './components/SecondSlide.vue'
-import ThirdSlide from './components/ThirdSlide.vue'
-import FourthSlide from './components/FourthSlide.vue'
-import FifthSlide from './components/FifthSlide.vue'
-import SixthSlide from './components/SixthSlide.vue'
-import SeventhSlide from './components/SeventhSlide.vue'
-import EitghSlide from './components/EitghSlide.vue'
+// import ThirdSlide from './components/ThirdSlide.vue'
+// import FourthSlide from './components/FourthSlide.vue'
+// import FifthSlide from './components/FifthSlide.vue'
+// import SixthSlide from './components/SixthSlide.vue'
+// import SeventhSlide from './components/SeventhSlide.vue'
+// import EitghSlide from './components/EitghSlide.vue'
 
 export default {
   name: 'App',
@@ -18,13 +17,12 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
-    SecondSlide,
-    ThirdSlide,
-    FourthSlide,
-    FifthSlide,
-    SixthSlide,
-    SeventhSlide,
-    EitghSlide
+    // ThirdSlide,
+    // FourthSlide,
+    // FifthSlide,
+    // SixthSlide,
+    // SeventhSlide,
+    // EitghSlide
   },
   data() {
     return {
@@ -52,13 +50,13 @@ export default {
       <Carousel class="carousel" :autoplay="2000" :wrapAround="true" :transition="500" items-to-show="2.5" :items-to-show="1.5">
         <Slide v-for="(slidePath, idx) in slidesPaths" :key="slide">
           <FirstSlide v-if="idx === 0" />
-          <SecondSlide v-if="idx === 1" />
-          <ThirdSlide v-if="idx === 2" />
-          <FourthSlide v-if="idx === 3" />
-          <EitghSlide v-if="idx === 4" />
-          <SixthSlide v-if="idx === 5" />
-          <SeventhSlide v-if="idx === 6" />
-          <FifthSlide v-if="idx === 7" />
+          <img v-if="idx === 1" class="img-slide" src="../assets/second-slide.jpg" alt="">
+          <img v-if="idx === 2" class="img-slide" src="../assets/third-slide.jpg" alt="">
+          <img v-if="idx === 3" class="img-slide" src="../assets/fourth-slide.jpg" alt="">
+          <img v-if="idx === 4" class="img-slide" src="../assets/fifth-slide.jpg" alt="">
+          <img v-if="idx === 5" class="img-slide" src="../assets/sixth-slide.jpg" alt="">
+          <img v-if="idx === 6" class="img-slide" src="../assets/seventh-slide.jpg" alt="">
+          <img v-if="idx === 7" class="img-slide" src="../assets/eithts-slide.jpg" alt="">
         </slide>
         <template #addons>
           <Navigation />
@@ -77,9 +75,7 @@ export default {
         <li>Make lifelong friends: join a welcoming community where strong friendships are formed.</li>
       </ul>
     </div>
-    <div class="footer">
-      <div class="footer-bg"></div>
-    </div>
+    <div class="footer-bg"></div>
 </template>
 
 <style scoped>
@@ -185,8 +181,15 @@ export default {
 
 .footer-bg {
   background: url('./assets/footer-bg.jpg');
-  width: 651px;
+  max-width: 100%;
   height: 405px;
-  background-position: bottom center;
+  background-position: 39% 84%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-slide {
+  height: 275px;
+  width: 158px;
 }
 </style>
