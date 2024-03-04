@@ -2,6 +2,14 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
+import firstSlde from './assets/first-slide.jpg'
+import secondSlide from './assets/second-slide.jpg'
+import thirdSlide from './assets/third-slide.jpg'
+import fourthSlide from './assets/fourth-slide.jpg'
+import fifthSlide from './assets/fifth-slide.jpg'
+import sixthSlide from './assets/sixth-slide.jpg'
+import seventhSlide from './assets/seventh-slide.jpg'
+import eithtsSlide from './assets/eithts-slide.jpg'
 
 
 export default {
@@ -12,11 +20,11 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
-    
+    firstSlde
   },
   data() {
     return {
-      slidesPaths: ['./assets/first-slide.jpg', '../src/assets/second-slide.jpg', '../assets/third-slide.jpg', '../../src/assets/fifth-slide.jpg', '../../src/assets/sixth-slide.jpg', '../../src/assets/seventh-slide.jpg', '../../src/assets/eithts-slide.jpg'],
+      slidesPaths: [firstSlde, secondSlide, thirdSlide, fourthSlide, seventhSlide, sixthSlide, fifthSlide, eithtsSlide],
     }
   },
 }
