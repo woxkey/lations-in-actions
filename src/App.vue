@@ -2,13 +2,13 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
-// import SecondSlide from './components/SecondSlide.vue'
-// import ThirdSlide from './components/ThirdSlide.vue'
-// import FourthSlide from './components/FourthSlide.vue'
-// import FifthSlide from './components/FifthSlide.vue'
-// import SixthSlide from './components/SixthSlide.vue'
-// import SeventhSlide from './components/SeventhSlide.vue'
-// import EitghSlide from './components/EitghSlide.vue'
+import SecondSlide from './components/SecondSlide.vue'
+import ThirdSlide from './components/ThirdSlide.vue'
+import FourthSlide from './components/FourthSlide.vue'
+import FifthSlide from './components/FifthSlide.vue'
+import SixthSlide from './components/SixthSlide.vue'
+import SeventhSlide from './components/SeventhSlide.vue'
+import EitghSlide from './components/EitghSlide.vue'
 
 export default {
   name: 'App',
@@ -18,13 +18,13 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
-    // SecondSlide,
-    // ThirdSlide,
-    // FourthSlide,
-    // FifthSlide,
-    // SixthSlide,
-    // SeventhSlide,
-    // EitghSlide
+    SecondSlide,
+    ThirdSlide,
+    FourthSlide,
+    FifthSlide,
+    SixthSlide,
+    SeventhSlide,
+    EitghSlide
   },
   data() {
     return {
@@ -51,14 +51,14 @@ export default {
     <div class="container">
       <Carousel class="carousel" :autoplay="2000" :wrapAround="true" :transition="500" items-to-show="2.5" :items-to-show="1.5">
         <Slide v-for="(slidePath, idx) in slidesPaths" :key="slide">
-          <FirstSlide  />
-          <!-- <SecondSlide v-if="idx === 1" /> -->
-          <!-- <ThirdSlide v-if="idx === 2" />
+          <FirstSlide v-if="idx === 0" />
+          <SecondSlide v-if="idx === 1" />
+          <ThirdSlide v-if="idx === 2" />
           <FourthSlide v-if="idx === 3" />
           <EitghSlide v-if="idx === 4" />
           <SixthSlide v-if="idx === 5" />
           <SeventhSlide v-if="idx === 6" />
-          <FifthSlide v-if="idx === 7" /> -->
+          <FifthSlide v-if="idx === 7" />
         </slide>
         <template #addons>
           <Navigation />
