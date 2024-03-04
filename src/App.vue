@@ -2,6 +2,7 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
+import SecondSlide from './components/SecondSlide.vue'
 // import ThirdSlide from './components/ThirdSlide.vue'
 // import FourthSlide from './components/FourthSlide.vue'
 // import FifthSlide from './components/FifthSlide.vue'
@@ -17,6 +18,7 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
+    SecondSlide
     // ThirdSlide,
     // FourthSlide,
     // FifthSlide,
@@ -50,7 +52,7 @@ export default {
       <Carousel class="carousel" :autoplay="2000" :wrapAround="true" :transition="500" items-to-show="2.5" :items-to-show="1.5">
         <Slide v-for="(slidePath, idx) in slidesPaths" :key="slide">
           <FirstSlide v-if="idx === 0" />
-          
+          <SecondSlide v-if="idx === 1"/>
         </slide>
         <template #addons>
           <Navigation />
@@ -69,7 +71,11 @@ export default {
         <li>Make lifelong friends: join a welcoming community where strong friendships are formed.</li>
       </ul>
     </div>
-    <div class="footer-bg"></div>
+    <div class="footer-bg">
+      <button>Join today!</button>
+      <button>LIA Instagram</button>
+      <button>LIA TikTok</button>
+    </div>
 </template>
 
 <style scoped>
@@ -180,6 +186,8 @@ export default {
   background-position: 39% 84%;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .img-slide {
