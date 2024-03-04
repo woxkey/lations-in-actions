@@ -79,6 +79,9 @@ export default {
         <li>Make lifelong friends: join a welcoming community where strong friendships are formed.</li>
       </ul>
     </div>
+    <div class="footer">
+      <div class="footer-bg"></div>
+    </div>
 </template>
 
 <style scoped>
@@ -180,5 +183,9 @@ export default {
   text-align: center;
   padding-bottom: 30px;
   color: rgba(198, 107, 255, 1);
+}
+
+.footer-bg {
+  
 }
 </style>
