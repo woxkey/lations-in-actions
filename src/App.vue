@@ -3,13 +3,13 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
 import firstSlde from '/assets/first-slide.jpg'
-import secondSlide from '../public/assets/first-slide.jpg'
-import thirdSlide from '../public/assets/first-slide.jpg'
-import fourthSlide from '../public/assets/first-slide.jpg'
-import fifthSlide from '../public/assets/first-slide.jpg'
-import sixthSlide from '../public/assets/first-slide.jpg'
-import seventhSlide from '../public/assets/first-slide.jpg'
-import eithtsSlide from '../public/assets/first-slide.jpg'
+import secondSlide from '../public/assets/second-slide.jpg'
+import thirdSlide from '../public/assets/third-slide.jpg'
+import fourthSlide from '../public/assets/fourth-slide.jpg'
+import fifthSlide from '../public/assets/fifth-slide.jpg'
+import sixthSlide from '../public/assets/sixth-slide.jpg'
+import seventhSlide from '../public/assets/seventh-slide.jpg'
+import eithtsSlide from '../public/assets/eithts-slide.jpg'
 
 
 export default {
@@ -119,7 +119,7 @@ export default {
 }
 
 .bg {
-  background-image: url('assets/main-bg.jpg');
+  background-image: url('../public/assets/main-bg.jpg');
   height: 234px;
   width: 100%;
   background-repeat: no-repeat;
