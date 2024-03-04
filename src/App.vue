@@ -50,13 +50,7 @@ export default {
       <Carousel class="carousel" :autoplay="2000" :wrapAround="true" :transition="500" items-to-show="2.5" :items-to-show="1.5">
         <Slide v-for="(slidePath, idx) in slidesPaths" :key="slide">
           <FirstSlide v-if="idx === 0" />
-          <img v-if="idx === 1" class="img-slide" src="../assets/second-slide.jpg" alt="">
-          <img v-if="idx === 2" class="img-slide" src="../assets/third-slide.jpg" alt="">
-          <img v-if="idx === 3" class="img-slide" src="../assets/fourth-slide.jpg" alt="">
-          <img v-if="idx === 4" class="img-slide" src="../assets/fifth-slide.jpg" alt="">
-          <img v-if="idx === 5" class="img-slide" src="../assets/sixth-slide.jpg" alt="">
-          <img v-if="idx === 6" class="img-slide" src="../assets/seventh-slide.jpg" alt="">
-          <img v-if="idx === 7" class="img-slide" src="../assets/eithts-slide.jpg" alt="">
+          
         </slide>
         <template #addons>
           <Navigation />
