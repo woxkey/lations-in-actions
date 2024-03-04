@@ -1,5 +1,5 @@
 <template>
-    <img class="img-slide" src="../assets/second-slide.jpg" alt="">
+    <img class="img-slide" src="../assets/second-slide.JPG" alt="">
 </template>
 
 <script>

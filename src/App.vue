@@ -19,7 +19,14 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
-    Accordion
+    Accordion,
+    SecondSlide,
+    ThirdSlide,
+    FourthSlide,
+    FifthSlide,
+    SixthSlide,
+    SeventhSlide,
+    EitghSlide
   },
   data() {
     return {
@@ -50,10 +57,10 @@ export default {
           <SecondSlide v-if="idx === 1" />
           <ThirdSlide v-if="idx === 2" />
           <FourthSlide v-if="idx === 3" />
-          <FifthSlide v-if="idx === 4" />
+          <EitghSlide v-if="idx === 4" />
           <SixthSlide v-if="idx === 5" />
           <SeventhSlide v-if="idx === 6" />
-          <EitghSlide v-if="idx === 7" />
+          <FifthSlide v-if="idx === 7" />
         </slide>
         <template #addons>
           <Navigation />
