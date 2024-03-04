@@ -3,7 +3,7 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
 // import SecondSlide from './components/SecondSlide.vue'
-// import ThirdSlide from './components/ThirdSlide.vue';
+// import ThirdSlide from './compon]ents/ThirdSlide.vue';
 // import FourthSlide from './components/FourthSlide.vue'
 // import FifthSlide from './components/FifthSlide.vue'
 // import SixthSlide from './components/SixthSlide.vue'
