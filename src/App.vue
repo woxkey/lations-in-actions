@@ -2,13 +2,7 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import FirstSlide from './components/FirstSlide.vue'
-// import SecondSlide from './components/SecondSlide.vue'
-// import ThirdSlide from './compon]ents/ThirdSlide.vue';
-// import FourthSlide from './components/FourthSlide.vue'
-// import FifthSlide from './components/FifthSlide.vue'
-// import SixthSlide from './components/SixthSlide.vue'
-// import SeventhSlide from './components/SeventhSlide.vue'
-// import EitghSlide from './components/EitghSlide.vue'
+
 
 export default {
   name: 'App',
@@ -18,13 +12,7 @@ export default {
     Pagination,
     Navigation,
     FirstSlide,
-    // SecondSlide
-    // ThirdSlide,
-    // FourthSlide,
-    // FifthSlide,
-    // SixthSlide,
-    // SeventhSlide,
-    // EitghSlide
+    
   },
   data() {
     return {
@@ -71,8 +59,8 @@ export default {
       </ul>
     </div>
     <div class="footer-bg">
-      <a>Join today!</a>
-      <a>LIA Instagram</a>
+      <a style="cursor: auto; margin-bottom: 90px; margin-top: 30px;">Join today!</a>
+      <a style="margin-bottom: 20px;">LIA Instagram</a>
       <a>LIA TikTok</a>
     </div>
 </template>
@@ -179,7 +167,7 @@ export default {
 }
 
 .footer-bg {
-  background: url('./assets/footer-bg.jpg');
+  background-image: url('./assets/footer-bg.jpg');
   max-width: 100%;
   height: 405px;
   background-position: 39% 84%;
@@ -199,8 +187,9 @@ export default {
   letter-spacing: 0em;
   text-align: center;
   background: linear-gradient(90deg, #C66BFF 0%, #600CCB 100%);
-  height: 75px;
+  padding: 20px 0;
   color: rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
 .img-slide {
