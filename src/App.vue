@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      slidesPaths: ['./assets/first-slide.jpg', '../src/assets/second-slide.jpg', '../../src/assets/third-slide.jpg', '../../src/assets/fifth-slide.jpg', '../../src/assets/sixth-slide.jpg', '../../src/assets/seventh-slide.jpg', '../../src/assets/eithts-slide.jpg'],
+      slidesPaths: ['./assets/first-slide.jpg', '../src/assets/second-slide.jpg', '../assets/third-slide.jpg', '../../src/assets/fifth-slide.jpg', '../../src/assets/sixth-slide.jpg', '../../src/assets/seventh-slide.jpg', '../../src/assets/eithts-slide.jpg'],
     }
   },
 }
@@ -38,7 +38,7 @@ export default {
     </div>
     <div class="container">
       <Carousel class="carousel" :autoplay="2000" :wrapAround="true" :transition="500" items-to-show="2.5" :items-to-show="1.5">
-        <Slide v-for="slidePath in slidesPaths" :key="slide">
+        <Slide v-for="(slidePath, idx) in slidesPaths" :key="slide">
           <FirstSlide :url="slidePath"/>
         </slide>
         <template #addons>
