@@ -184,7 +184,7 @@ export default {
   background-image: url('../public/assets/footer-bg.jpg');
   width: 100%;
   height: 405px;
-  background-position: 39% 84%;
+  background-position: 77% 9%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
