@@ -74,8 +74,8 @@ export default {
     </div>
     <div class="footer-bg">
       <a style="cursor: auto; margin-bottom: 90px; margin-top: 30px;">Join today!</a>
-      <a style="margin-bottom: 20px;">LIA Instagram</a>
-      <a>LIA TikTok</a>
+      <a href="https://www.instagram.com/latinosinaction.srhs?igsh=MTR1aGFtdG9uMndmeQ%3D%3D&utm_source=qr" target="_blank" style="margin-bottom: 20px;">LIA Instagram</a>
+      <a href="https://www.tiktok.com/@latinosinaction.srhs" target="_blank">LIA TikTok</a>
     </div>
 </template>
 
